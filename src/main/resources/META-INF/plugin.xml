@@ -3,7 +3,7 @@
     <!-- Your plugin description -->
     <id>com.pedrao.serialversionuidgenerator</id>
     <name>SerialVersionUID Generator</name>
-    <version>1.0</version>
+    <version>1.0.2</version>
     <idea-version since-build="241" until-build="252.*" />
     <description><![CDATA[
   Adds missing <code>serialVersionUID</code> fields to <code>Serializable</code> classes automatically.
@@ -15,7 +15,7 @@
     <li>Quick-fix to generate unique, valid <code>serialVersionUID</code> values, for all files found in inspection.</li>
     <li>Handles complex inheritance, including interfaces extending <code>Serializable</code>.</li>
   </ul>
-  See the <a href="https://github.com/your-repo">GitHub repository</a> for source code and contributions.
+  See the <a href="https://github.com/pedrorodrigues1997">GitHub repository</a> for source code and contributions.
 ]]></description>
 
 
