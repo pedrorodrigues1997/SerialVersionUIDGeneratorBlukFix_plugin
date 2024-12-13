@@ -1,25 +1,26 @@
 <idea-plugin>
 
     <!-- Your plugin description -->
-    <id>com.pedrao.SerialVersionUIDGenerator - BulkFix</id>
+    <id>com.pedrao.serialversionuidgenerator</id>
     <name>SerialVersionUID Generator</name>
     <version>1.0</version>
     <idea-version since-build="213.7172.25"/>
     <description><![CDATA[
-Automates the addition of missing <code>serialVersionUID</code> fields to <code>Serializable</code> classes. This plugin ensures compliance with Java serialization best practices, preventing runtime warnings and potential deserialization issues.
-
-Key features include:
-<ul>
-  <li>Inspection for classes implementing or inheriting <code>Serializable</code> to identify missing <code>serialVersionUID</code>.</li>
-  <li>Quick-fix to generate unique <code>serialVersionUID</code> values automatically.</li>
-  <li>Handles complex inheritance scenarios, including interfaces that extend <code>Serializable</code>.</li>
-</ul>
-
-For more details, visit the
-<a href="https://github.com/your-repo">GitHub repository</a>.
+  Adds missing <code>serialVersionUID</code> fields to <code>Serializable</code> classes automatically.
+  Ensures compliance with Java serialization best practices, avoiding runtime warnings and deserialization issues.
+  <br><br>
+  **Key Features:**
+  <ul>
+    <li>Detects missing <code>serialVersionUID</code> in classes implementing or inheriting <code>Serializable</code>.</li>
+    <li>Quick-fix to generate unique, valid <code>serialVersionUID</code> values.</li>
+    <li>Handles complex inheritance, including interfaces extending <code>Serializable</code>.</li>
+  </ul>
+  See the <a href="https://github.com/your-repo">GitHub repository</a> for source code and contributions.
 ]]></description>
 
-    <vendor email="pedrex1997@gmail.com">Pedro Rodrigues</vendor>
+
+    <vendor email="pedrex1997@gmail.com" url="https://github.com/pedrorodrigues1997">Pedro Rodrigues</vendor>
+
 
     <!-- Define the inspection tool here -->
     <extensions defaultExtensionNs="com.intellij">
@@ -29,8 +30,9 @@ For more details, visit the
                 displayName="Serializable classes without serialVersionUID"
                 groupName="JVM languages"
                 enabledByDefault="true"
-        implementationClass="com.pedrao.serialversionuidgenerator.SerializableWithoutSerialVersionUIDInspectionss"/>
+        implementationClass="com.pedrao.serialversionuidgenerator.SerializableWithoutSerialVersionUIDInspections"/>
     </extensions>
+    <category>Code tools</category>
 
 
 </idea-plugin>
