@@ -4,7 +4,7 @@
     <id>com.pedrao.serialversionuidgenerator</id>
     <name>SerialVersionUID Generator</name>
     <version>1.0</version>
-    <idea-version since-build="213.7172.25"/>
+    <idea-version since-build="241" until-build="242.*" />
     <description><![CDATA[
   Adds missing <code>serialVersionUID</code> fields to <code>Serializable</code> classes automatically.
   Ensures compliance with Java serialization best practices, avoiding runtime warnings and deserialization issues.
