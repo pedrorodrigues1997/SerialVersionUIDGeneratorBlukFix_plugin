@@ -19,6 +19,9 @@
 ]]></description>
 
 
+        <depends>com.intellij.modules.java</depends>
+        <depends>com.intellij.modules.platform</depends>
+
     <vendor email="pedrex1997@gmail.com" url="https://github.com/pedrorodrigues1997">Pedro Rodrigues</vendor>
 
 
