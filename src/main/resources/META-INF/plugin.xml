@@ -1,0 +1,36 @@
+<idea-plugin>
+
+    <!-- Your plugin description -->
+    <id>com.pedrao.SerialVersionUIDGenerator - BulkFix</id>
+    <name>SerialVersionUID Generator</name>
+    <version>1.0</version>
+    <idea-version since-build="213.7172.25"/>
+    <description><![CDATA[
+Automates the addition of missing <code>serialVersionUID</code> fields to <code>Serializable</code> classes. This plugin ensures compliance with Java serialization best practices, preventing runtime warnings and potential deserialization issues.
+
+Key features include:
+<ul>
+  <li>Inspection for classes implementing or inheriting <code>Serializable</code> to identify missing <code>serialVersionUID</code>.</li>
+  <li>Quick-fix to generate unique <code>serialVersionUID</code> values automatically.</li>
+  <li>Handles complex inheritance scenarios, including interfaces that extend <code>Serializable</code>.</li>
+</ul>
+
+For more details, visit the
+<a href="https://github.com/your-repo">GitHub repository</a>.
+]]></description>
+
+    <vendor email="pedrex1997@gmail.com">Pedro Rodrigues</vendor>
+
+    <!-- Define the inspection tool here -->
+    <extensions defaultExtensionNs="com.intellij">
+        <localInspection
+                language="JAVA"
+                shortName="SerializableWithoutSerialVersionUID"
+                displayName="Serializable classes without serialVersionUID"
+                groupName="JVM languages"
+                enabledByDefault="true"
+        implementationClass="com.pedrao.serialversionuidgenerator.SerializableWithoutSerialVersionUIDInspectionss"/>
+    </extensions>
+
+
+</idea-plugin>
