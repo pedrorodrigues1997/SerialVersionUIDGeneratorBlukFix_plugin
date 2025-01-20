@@ -5,8 +5,7 @@ plugins {
 }
 
 group = "com.pedrao"
-version = "1.0.2"
-
+version = "1.0.4"
 
 repositories {
     mavenCentral()
@@ -37,8 +36,7 @@ tasks {
 
 
     patchPluginXml {
-        sinceBuild.set("241")
-        untilBuild.set("242.*")
+        sinceBuild.set("232")
     }
 
     signPlugin {
